@@ -57,7 +57,7 @@ RCT_EXPORT_METHOD(getAll:(RCTResponseSenderBlock)callback) {
         [d setObject:c.path forKey:@"path"];
         [cookies setObject:d forKey:c.name];
     }
-    callback(@[cookies, @"success"]);
+    callback(@[[NSNull null], cookies]);
 }
 
 @end
